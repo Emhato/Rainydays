@@ -4,4 +4,12 @@ body{
 }
 h1{
     font-size: 10rem;
+    color: #f2f2f2;
+}
+h2{
+    font-size: 5rem;
+    color: #f2f2f2;
+}
+nav li {
+    display: inline-block;
 }
