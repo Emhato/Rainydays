@@ -1,23 +1,17 @@
-body{
-    background-color: aqua;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-h1{
-    font-size: 10rem;
+.button1 {
     color: #f2f2f2;
-}
-h2{
-    font-size: 5rem;
-    color: #f2f2f2;
-}
-nav li {
-    display: inline-block;
-}
-nav a {
-    color: #f2f2f2;
+    font-size: 41px;
+    background-color: #0A3641;
     text-decoration: none;
-    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 825px;
+    height: 70px;
+    transition: width, height, 2s, foward;
 }
-nav a:hover{
-    text-decoration: underline;
+
+.button1:hover {
+    width: 850px;
+    height: 95px;
 }
