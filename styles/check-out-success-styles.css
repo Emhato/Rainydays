@@ -29,7 +29,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* menu home page*/
+/* menu section*/
 
 nav {
     background-color: #ffffff;
@@ -63,4 +63,51 @@ img {
 
 .search {
     margin-left: 525px;
+}
+
+/* info section */
+
+.check {
+    height: 90px;
+    width: 110px;
+    margin-left: 345px;
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button {
+    background-color: var(--logo-color);
+    color: var(--light-grey);
+    font-size: 2rem;
+    font-weight: 700;
+    height: 70px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 35px;
+}
+
+.button:hover {
+    font-size: 2.5rem;
+    transition-duration: 0.5s;
+    transition-property: font-size;
+}
+
+.wrapper {
+    background-color: var(--light-grey);
+    opacity: 90%;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 130px;
 }
