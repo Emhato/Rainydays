@@ -23,7 +23,7 @@ font-family: 'Raleway', sans-serif; */
 
 /* HOME PAGE */
 
-.home-page {
+body {
     background-image: url('../images/hjemmesidebilde.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,69 +31,53 @@ font-family: 'Raleway', sans-serif; */
 
 /* menu home page*/
 
-
-.home-page li {
-    list-style: none;
-    display: inline-block;
-    line-height: 60px;
+nav {
+    background-color: #ffffff;
+    opacity: 70%;
 }
 
-.home-page li a {
+li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+}
+
+li a {
     display: block;
     text-decoration: none;
     font-family: 'libre baskerville', serif;
     font-size: 2rem;
     padding: 0 20px;
-    color: var(--light-grey)
+    color: var(--logo-color)
 }
 
-.home-page li a:hover {
+li a:hover {
     text-decoration: underline;
+}
+
+img {
+    width: 109px;
+    height: 58px;
+}
+
+.search {
+    margin-left: 525px;
 }
 
 /* header one and two, home page */
 
-.home-page h1 {
+h1 {
     font-weight: 700;
     font-size: 9rem;
     text-transform: uppercase;
     color: var(--light-grey);
     text-align: center;
-    margin-top: 110px;
+    margin-top: 85px;
 }
 
-.home-page h2 {
+h2 {
     font-size: 2.5rem;
     color: var(--light-grey);
     text-align: center;
-}
-
-/* ABOUT PAGE*/
-
-/*Header and subheader, about page*/
-
-.about h1 {
-    color: #0A3641;
-    text-align: center;
-}
-
-/* Main menu */
-
-body header .main-nav li {
-    list-style: none;
-    display: inline-block;
-    line-height: 60px;
-}
-
-.main-nav li a {
-    display: block;
-    text-decoration: none;
-    font-family: 'libre baskerville', serif;
-    font-size: 2rem;
-    padding: 0 20px;
-    color: var(--light-grey)
-}
-
-.main-nav li a:hover {
-    text-decoration: underline;
 }

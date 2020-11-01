@@ -1,0 +1,66 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif; */
+
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/LibreBaskerville-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/raleway-variablefont_wght.ttf") format("ttf");
+}
+
+:root {
+    --light-grey: #f2f2f2;
+    --logo-color: #0A3641;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME PAGE */
+
+body {
+    background-image: url('../images/hjemmesidebilde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* menu home page*/
+
+nav {
+    background-color: #ffffff;
+    opacity: 70%;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'libre baskerville', serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--logo-color)
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 109px;
+    height: 58px;
+}
+
+.search {
+    margin-left: 525px;
+}

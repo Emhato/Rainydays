@@ -58,3 +58,50 @@ img {
     margin-left: 500px;
 }
 
+
+/* Sizes */
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.sizes button {
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--light-grey);
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    width: 45px;
+    text-align: center;
+}
+
+.sizes {
+    vertical-align: middle;
+}
+
+.sizes button:hover {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sizes button:focus {
+    background-color: #9a9a9a;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* display when item is added to bag */
+
+.bag {
+    display: none;
+}
+
+#addtobag {
+    display: none;
+}
+
+#addtobag:checked ~ .bag {
+    display: block;
+}
+

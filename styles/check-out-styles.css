@@ -176,8 +176,6 @@ input {
     height: 67px;
     width: 825px;
     border: 2px solid var(--logo-color);
-    
-
 }
 
 input:focus {
@@ -195,4 +193,19 @@ h4 {
     border-style: none none solid none;
     border-width: 1px;
     border-color: var(--logo-color);
+}
+
+/* Pay and place order button */
+
+.submit {
+    margin: 150px 0 150px 340px;
+    background-color: var(--logo-color);
+    color: var(--light-grey);
+    font-size: 1.5rem;
+}
+
+.submit:hover {
+    font-size: 2rem;
+    transition-duration: 0.5s;
+    transition-property: font-size;
 }
