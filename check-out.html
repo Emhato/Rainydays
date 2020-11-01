@@ -4,56 +4,73 @@
       <title>Check out Rainy Days Website </title>
       <meta name="Description" content="Purchase your selected item from Rainy Days Website ">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+      <link href="styles/check-out-styles.css" rel="stylesheet">
     </head>
     <body>
       <header>
         <nav>
-          <ul>
-            <li><a href=check-out.html>Check out</a></li>
-            <li><a href=index.html>Rainydays logo</a></li>
+          <ul class="grid1">
+            <li class="checkout"><a class="checkout" href="check-out.html">Check Out</a></li>
+            <li><a href=index.html><img class="logo" src="images/rainydays-logo.png" alt="Rainy days logo"></a></li>
+            <li class="bagicon"><a href=check-out.html><img class="bagicon" src="images/rainydays-bag-icon.svg" alt="shopping chart"></a></li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>Check Out</h1>
-        <section>
-            <h2>Order summary</h2>
-            <img src="images/hiking-jacket.jpg" alt="Image of your selected item, the hiking jacket"
-            <h3>Hiking jacket</h3>
-            <p>Size M</p>
-            <p>Quantity</p>
-            <p>1</p>
-            <p>Prize</p>
-            <p>1999kr</p>
-            <p>Total</p>
-            <p>1999kr</p>
-            <p>1999kr</p>
-            <p>Items total</p>
+        <section class="summary">
+            <h1>Order summary</h1>
+            <p class="quantity">Quantity</p>
+            <p class="pri">Prize</p>
+            <p class="tot">Total</p>
+        </section>
+        <section class="ordersummary">
+            <h2>Hiking jacket</h2>
+            <img class="item" src="images/hiking-jacket.jpg" alt="image of your selected item, the hiking jacket">
+            <p class="number">1</p>
+            <p class="size">Size M</p>
+            <p class="prize1">1999kr</p>
+            <p class="prize2">1999kr</p>
+            <p class="prize3">1999kr</p>
+            <p class="total">Items total</p>
         </section>
         <section>
-          <h4>Adress</h4>
-          <p>First name*</p>
-          <p>Last name*</p>
-          <p>E-mail*</p>
-          <p>Adress line 1*</p>
-          <p>Adress line 2</p>
-          <p>City/ Surburb*</p>
-          <p>Zip/ Postcode*</p>
-          <p>Mobile phone*</p>
-          <p>Country</p>
-        </section>
-        <section>
-          <h5>Payment</h5>
-          <p>Card number*</p>
-          <p>Expiry date*</p>
-          <p>Security code*</p>
-        </section>
-        <section>
-          <h6>Pay and place order</h6>
+          <h3>Adress</h3>
+          <form>
+            <div class="adressgrid">
+              <label for="firstname">First name*</label>
+              <input type="text" name="firstname" placeholder="First name*">
+              <label for="lastname">Last name*</label>
+              <input type="text" name="lastname" placeholder="Last name*">
+              <label for="email">E-mail*</label>
+              <input type="email" name="email" placeholder="E-mail*">
+              <label for="adress1">Adress line 1*</label>
+              <input type="text" name="adress1" placeholder="Adress line 1*">
+              <label for="adress2">Adress line 2*</label>
+              <input type="text" name="adress2" placeholder="Adress line 2">
+              <label for="city">City/ Surburb*</label>
+              <input type="text" name="city" placeholder="City/ Surburb*">
+              <label for="zip">Zip/ Postcode*</label>
+              <input type="text" name="zip" placeholder="Zip/ Postcode*">
+              <label for="phonenumber">Phone*</label>
+              <input type="tel" name="phonenumber" placeholder="Phone*">
+              <label for="country">Country*</label>
+              <input type="text" name="country" placeholder="Country*">
+            </div>
+            <h4>Payment</h4>
+            <div class="paymentgrid">
+              <label for="cardnumber">Card number*</label>
+              <input type="text" name="cardnumber" placeholder="Card number*">
+              <label for="expirydate">Expiry date*</label>
+              <input type="date" name="expirydate" placeholder="Expiry date*">
+              <label for="security code">Security code*</label>
+              <input type="text" name="security code" placeholder="Security code*">
+              <input type="submit" value="Pay and place order">
+            </div>
+          </form>
         </section>
       </main>
-      <footer>
-        Copyright &copy;
+      <footer> 
       </footer>
     </body>
 </html>

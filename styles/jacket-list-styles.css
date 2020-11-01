@@ -1,0 +1,194 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif; */
+
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/LibreBaskerville-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/raleway-variablefont_wght.ttf") format("ttf");
+}
+
+:root {
+    --light-grey: #f2f2f2;
+    --logo-color: #0A3641;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MAIN MENU*/
+
+nav {
+    background-color: var(--light-grey);
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'libre baskerville', serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--logo-color)
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 109px;
+    height: 58px;
+}
+
+.search {
+    margin-left: 500px;
+}
+
+/* Header */
+
+h1 {
+    font-size: 5rem;
+    margin: 66px 0 30px 140px;
+}
+
+/* List of jackets */
+
+.jacket1, .jacket2, .jacket3, .jacket4, .jacket5, .jacket6 {
+    height: 750px;
+    width: 550px;
+}
+
+.jacket1:hover, .jacket2:hover, .jacket3:hover, .jacket4:hover, .jacket5:hover, .jacket6:hover {
+    opacity: 70%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.prize1, .prize2, .prize3, .prize4, .prize5, .prize6 {
+    margin-bottom: 20px;
+}
+
+.jacket1 {
+    margin-left: 140px;
+    grid-area: jacket1;
+}
+
+.jacket2 {
+    grid-area: jacket2;
+    margin-left: 50px;
+}
+
+.jacket1text{
+    grid-area: jacket1text;
+    margin-left: 140px;
+}
+
+.jacket2text {
+    grid-area: jacket2text;
+    margin-left: 50px;
+}
+
+.prize1 {
+    grid-area: prize1;
+    margin-left: 140px;
+}
+
+.prize2 {
+    grid-area: prize2;
+    margin-left: 50px;
+}
+
+.jacket3 {
+    margin-left: 140px;
+    grid-area: jacket3;
+}
+
+.jacket4 {
+    grid-area: jacket4;
+    margin-left: 50px;
+}
+
+.jacket3text {
+    grid-area: jacket3text;
+    margin-left: 140px;
+}
+
+.jacket4text {
+    grid-area: jacket4text;
+    margin-left: 50px;
+}
+
+.prize3 {
+    grid-area: prize3;
+    margin-left: 140px;
+}
+
+.prize4 {
+    grid-area: prize4;
+    margin-left: 50px;
+}
+
+.jacket5 {
+    margin-left: 140px;
+    grid-area: jacket5;
+}
+
+.jacket6 {
+    grid-area: jacket6;
+    margin-left: 50px;
+}
+
+.jacket5text {
+    grid-area: jacket5text;
+    margin-left: 140px;
+}
+
+.jacket6text {
+    grid-area: jacket6text;
+    margin-left: 50px;
+}
+
+.prize5 {
+    grid-area: prize5;
+    margin-left: 140px;
+}
+
+.prize6 {
+    grid-area: prize6;
+    margin-left: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 750px 36px 90px);
+    grid-template-areas: 
+        "jacket1 jacket2"
+        "jacket1text jacket2text"
+        "prize1 prize2"
+        "jacket3 jacket4"
+        "jacket3text jacket4text"
+        "prize3 prize4"
+        "jacket5 jacket6"
+        "jacket5text jacket6text"
+        "prize5 prize6";
+}
+

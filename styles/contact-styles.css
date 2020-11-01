@@ -1,108 +1,182 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif; */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/LibreBaskerville-Regular.ttf") format("ttf");
 }
 
-body {
-    line-height:1;
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/raleway-variablefont_wght.ttf") format("ttf");
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+:root {
+    --light-grey: #f2f2f2;
+    --logo-color: #0A3641;
 }
 
-nav ul {
-    list-style:none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-blockquote, q {
-    quotes:none;
+/* MAIN MENU*/
+
+/* MAIN MENU*/
+
+nav {
+    background-color: var(--light-grey);
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+
+li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'libre baskerville', serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--logo-color)
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+li a:hover {
+    text-decoration: underline;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+img {
+    width: 109px;
+    height: 58px;
 }
 
-del {
-    text-decoration: line-through;
+.search {
+    margin-left: 500px;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/*MY CODE STRARTS HERE */
+/* Text section */
 
 h1 {
-    color: aqua;
+    grid-area: h1;
+    font-size: 5rem;
+    margin-left: 140px;
+    align-self: end;
 }
+
+h2 {
+    grid-area: h2;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 140px;
+    align-self: center;
+}
+
+.email {
+    grid-area: email;
+    margin-left: 140px;
+    align-self: center;
+}
+
+.phone {
+    grid-area: phone;
+    align-self: center;
+    justify-self: center;
+}
+
+.adress {
+    grid-area: adress;
+    align-self: center;
+    justify-self: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/* Image */
+
+.image {
+    background-image: url('../images/teltturbilde.jpg');
+    height: 664px;
+    width: 468px;
+    background-position: center;
+    background-size: cover;
+    grid-area: image;
+}
+
+/* Form section */
+
+.text {
+    margin-left: 140px;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+input, textarea {
+    border: 2px solid var(--logo-color);
+}
+
+input:focus, textarea:focus {
+    border: 3px solid var(--logo-color);
+}
+
+.name {
+    grid-area: name;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.cellphone {
+    grid-area: cellphone;
+}
+
+.message {
+    grid-area: message;
+}
+
+.send {
+    grid-area: send;
+    background-color: #035373;
+    color: var(--light-grey);
+    font-size: 1.5rem;
+}
+
+/* Layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 470px;
+    grid-template-rows: 151px 90px 70px;
+    grid-template-areas: 
+        "h1 h1 . image"
+        "h2 h2 h2 image"
+        "email phone adress image";
+}
+
+form {
+    display: grid;
+    grid-template-columns: 341px 531px;
+    grid-template-rows: 59px 59px 59px 59px;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-left: 140px;
+    grid-template-areas: 
+        "name message"
+        "mail message"
+        "cellphone message"
+        "send .";
+}
+

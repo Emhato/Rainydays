@@ -1,0 +1,198 @@
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif; */
+
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/LibreBaskerville-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/raleway-variablefont_wght.ttf") format("ttf");
+}
+
+:root {
+    --light-grey: #f2f2f2;
+    --logo-color: #0A3641;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* check out menu */
+
+
+.checkout {
+    color: #000000;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+.logo {
+    height: 159px;
+    width: 295px;
+    padding-left: 275px;
+    padding-right: 490px;
+}
+
+.bagicon {
+    width: 28px;
+    height: 32px;
+    padding-right: 50px;
+}
+
+nav {
+    background-color: #fff;
+    border-style: none none solid none;
+    border-width: 3px;
+    border-color: var(--logo-color);
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0 10px 0;
+}
+
+/* Order summary section */
+
+.summary h1, p {
+    display: inline-block;
+}
+
+.summary{
+    margin: 20px 210px 10px 210px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--logo-color);
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.summary p {
+    font-size: 1.5rem;
+}
+
+.quantity {
+    padding-left: 150px;
+}
+
+.pri {
+    padding-left: 205px;
+}
+
+.tot {
+    padding-left: 233px;
+}
+
+.item {
+    width: 167px;
+    grid-area: item;
+    margin-left: 210px;
+}
+
+h2 {
+    grid-area: hikingjacket;
+    padding-left: 20px;
+    font-weight: 700px;
+    font-size: 1.5rem;
+}
+
+.number {
+    grid-area: number;
+    font-size: 1.5rem;
+}
+
+.prize1 {
+    grid-area: prize1;
+    font-size: 1.5rem;
+}
+
+.prize2 {
+    grid-area: prize2;
+    font-size: 1.5rem;
+}
+
+.prize3 {
+    grid-area: prize3;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.size {
+    grid-area: m;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+.total {
+    grid-area: total;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.ordersummary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "item hikingjacket number prize1 prize2"
+        "item m . . ."
+        "item . total . prize3";
+}
+
+
+/* Adress section */
+
+h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 50px 210px 10px 210px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--logo-color);
+}
+
+label, input {
+    margin-top: 15px;
+}
+
+label {
+    margin-left: 210px;
+    font-size: 2rem;
+}
+
+input {
+    margin-right: 210px;
+    height: 67px;
+    width: 825px;
+    border: 2px solid var(--logo-color);
+    
+
+}
+
+input:focus {
+    border: 3px solid var(--logo-color);
+}
+
+
+
+/* Payment */
+
+h4 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 50px 210px 10px 210px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--logo-color);
+}

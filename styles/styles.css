@@ -1,17 +1,99 @@
-.button1 {
-    color: #f2f2f2;
-    font-size: 41px;
-    background-color: #0A3641;
-    text-decoration: none;
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    width: 825px;
-    height: 70px;
-    transition: width, height, 2s, foward;
+/* font-family: 'Libre Baskerville', serif;
+font-family: 'Raleway', sans-serif; */
+
+@font-face {
+    font-family: "baskerville";
+    src: url("fonts/LibreBaskerville-Regular.ttf") format("ttf");
 }
 
-.button1:hover {
-    width: 850px;
-    height: 95px;
+@font-face {
+    font-family: "raleway";
+    src: url("fonts/raleway-variablefont_wght.ttf") format("ttf");
+}
+
+:root {
+    --light-grey: #f2f2f2;
+    --logo-color: #0A3641;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME PAGE */
+
+.home-page {
+    background-image: url('../images/hjemmesidebilde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* menu home page*/
+
+
+.home-page li {
+    list-style: none;
+    display: inline-block;
+    line-height: 60px;
+}
+
+.home-page li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'libre baskerville', serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--light-grey)
+}
+
+.home-page li a:hover {
+    text-decoration: underline;
+}
+
+/* header one and two, home page */
+
+.home-page h1 {
+    font-weight: 700;
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: var(--light-grey);
+    text-align: center;
+    margin-top: 110px;
+}
+
+.home-page h2 {
+    font-size: 2.5rem;
+    color: var(--light-grey);
+    text-align: center;
+}
+
+/* ABOUT PAGE*/
+
+/*Header and subheader, about page*/
+
+.about h1 {
+    color: #0A3641;
+    text-align: center;
+}
+
+/* Main menu */
+
+body header .main-nav li {
+    list-style: none;
+    display: inline-block;
+    line-height: 60px;
+}
+
+.main-nav li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'libre baskerville', serif;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: var(--light-grey)
+}
+
+.main-nav li a:hover {
+    text-decoration: underline;
 }
