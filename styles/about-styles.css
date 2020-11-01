@@ -49,6 +49,10 @@ li a:hover {
     text-decoration: underline;
 }
 
+.about {
+    text-decoration: underline;
+}
+
 img {
     width: 109px;
     height: 58px;

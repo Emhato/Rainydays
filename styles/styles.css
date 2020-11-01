@@ -56,6 +56,10 @@ li a:hover {
     text-decoration: underline;
 }
 
+.home {
+    text-decoration: underline;
+}
+
 img {
     width: 109px;
     height: 58px;

@@ -182,7 +182,53 @@ input:focus {
     border: 3px solid var(--logo-color);
 }
 
+.fn {
+    margin-right: 115px;
+}
 
+.ln {
+    margin-right: 118px;
+}
+
+.em {
+    margin-right: 163px;
+}
+
+.al1 {
+    margin-right: 82px;
+}
+
+.al2 {
+    margin-right: 98px;
+}
+
+.cs {
+    margin-right: 75px;
+}
+
+.zp {
+    margin-right: 72px;
+}
+
+.phone {
+    margin-right: 170px;
+}
+
+.country {
+    margin-right: 145px;
+}
+
+.cn {
+    margin-right: 83px;
+}
+
+.ep {
+    margin-right: 102px;
+}
+
+.sc {
+    margin-right: 75px;
+}
 
 /* Payment */
 
